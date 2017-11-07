@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>上海世达食品有限公司</title>
+    <link rel="shortcut icon" href="../img/head.ico"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../common/common.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link rel="stylesheet" href="css/swiper.css"/>
+</head>
+<body>
+<a href="../index.html">
+    <div class="logo">
+        <img src="img/logo.jpg" alt="">
+    </div>
+</a>
+<!--搜索开始-->
+<div class="search_inp">
+    <div id="copy"> <img src="img/copyright.png"> </div>
+    <div class="inputbox">
+        <input type="text" placeholder="请搜索" class="text">
+    </div>
+    <div class="blog">
+        <a href="#">
+            <img src="img/weibo.png">
+        </a>
+    </div>
+    <div class="weixin">
+        <img src="img/weixin.png">
+    </div>
+</div>
+<div class="ewm" style="display: none; opacity: 1;">
+    <img src="img/wzhankai.png">
+</div>
+<div class="person">
+    <img src="img/meiti.jpg" alt="">
+    <!--导航开始-->
+    <div class="menu">
+        <ul class="clearfix">
+            <a href="../index.html">
+                <li class="li1 li-img"> 首页 </li>
+            </a>
+            <a href="../about/about.html">
+                <li class="li1">关于品牌</li>
+            </a>
+            <a href="../product/product.html">
+                <li class="li2">零售产品</li>
+            </a>
+            <a href="../service/service.html">
+                <li class="li3">业务产品</li>
+            </a>
+            <a href="../menu/menu.html">
+                <li class="li4 ">料理达人</li>
+            </a>
+            <a href="../activity/activity.html">
+                <li class="li5">活动动态</li>
+            </a>
+            <a href="../member/member.html">
+                <li class="li6">会员中心</li>
+            </a>
+            <a href="media.html">
+                <li class="li7 active">媒体中心</li>
+            </a>
+            <a href="../contact/contact.html">
+                <li class="li8">联系我们</li>
+            </a>
+        </ul>
+    </div>
+    <!--导航结束-->
+</div>
+<div class="mediaWrap">
+    <div class="mediaTitle">
+        <img src="img/ciputitle.png" alt=""/>
+    </div>
+    <div class="mediaContent" style="height: 631px;">
+        <div class="box">
+            <div class="movieContent" >
+                <div class="swiper-container swiper-container-horizontal">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-li swiper-slide-prev sone"  >
+                            <div class="movie_img"><img src="img/movie1.jpg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide swiper-li swiper-slide-active stwo" >
+                            <div class="movie_img"><img src="img/movie2.jpg" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide swiper-li swiper-slide-next sthree" >
+                            <div class="movie_img"><img src="img/movie3.jpg" alt=""/></div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar" >
+                        <div class="swiper-scrollbar-drag"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <!--点击视频开始-->
+    <div class="videoCon">
+        <div class="cloit" style="display: block;">
+            <img src="img/close.png">
+        </div>
+        <div class="movie_video" style="display: block;">
+            <video poster="img/video1.jpg" controls=""  src="http://www.laurelfood.com/Public/Index/video/1.mp4"></video>
+        </div>
+        <div class="movie_video " >
+            <video poster="img/video2.jpg" controls=""  src="http://www.laurelfood.com/Public/Index/video/2.mp4"></video>
+        </div>
+        <div class="movie_video " >
+            <video poster="img/video3.jpg" controls=""  src="http://www.laurelfood.com/Public/Index/video/3.mp4"></video>
+        </div>
+    </div>
+    <!--点击视频结束-->
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        scrollbar: '.swiper-scrollbar',
+        scrollbarHide: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+//        grabCursor: true,
+        paginationClickable: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });
+    $(function(){
+        $(".swiper-wrapper .swiper-li").click(function(){
+            $(".movieContent").fadeOut(500);
+            $(".videoCon").fadeIn(500);
+            var $index=$(this).index()+1;
+//         console.log($index)
+            $(".videoCon div").eq($index).show().siblings().not(".cloit").hide();
+        })
+        $(".cloit").click(function(){
+            $(".movieContent").fadeIn(500);
+            $(".videoCon").fadeOut(500);
+        })
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+.pagecon {
+	color: #fff;
+	font-size: 50px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	background-size: cover !important;
+}
+.num {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+}
+.lp {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.hot_w {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 103%;
+	height: 104%;
+	z-index: 2;
+}
+.num_text {
+	position: absolute;
+	width: 22%;
+	left: 13.5%;
+	bottom: 120px;
+}
+.num_text span {
+	display: block;
+}
+.num_text span img {
+	width: 100%;
+}
+.num_text span:nth-of-type(1) {
+	font-size: 3.5vw;
+	font-weight: bold;
+	font-style: oblique;
+	font-family: '';
+}
+.num_text span:nth-of-type(2) {
+	font-size: 1vw;
+	font-weight: 200;
+	text-align: left;
+	padding-left: 2%;
+	margin-top: -10px;
+}
+.num_text span:nth-of-type(2) a {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	position: relative;
+	padding-left: 10px;
+	box-sizing: border-box;
+	line-height: 5vh;
+	font-style: italic;
+}
+.num_text span:nth-of-type(2) a img {
+	top: 50%;
+	left: -7px;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	margin-top: -7.5px;
+}
+img:nth-of-type(2) {
+	display: none;
+}
+.num_text a:hover {
+	color: red !important;
+}
+.num_text a:hover img:nth-of-type(2) {
+	display: block;
+}
+.num_text a:hover img:nth-of-type(1) {
+	display: none;
+}
+/*侧边开始*/
+.menuSlide {
+	position: absolute;
+	bottom: calc(50% - 40px);
+	z-index: 1100;
+	right: 0;
+	width: 80px;
+	height: 80px;
+	_height: 100%;  /*兼容IE6*/
+	display: block;
+}
+.slide_btn1 {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	background: rgba(120, 117, 110, .8);
+	border-radius: 50%;
+}
+.slide_btn1 img {
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.slide_btn1:hover, .slide_btn2:hover {
+	background: red;
+}
+.slide_btn2 {
+	cursor: pointer !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 50px;
+	height: 50px;
+	background: rgba(120, 117, 110, .8);
+	border-radius: 50%;
+}
+.slide_btn2 img {
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	margin-top: 5px;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+.menuContent {
+	position: fixed;
+	width: 0;
+	top: 0;
+	height: 100%;
+	right: 0px;
+	z-index: 9998;
+	min-height: 500px;
+	background: url(../img/prod_bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.foodList .ulitem {
+	width: 77%;
+	height: 7%;
+	position: relative;
+	top: 47px;
+	left: 5%;
+}
+.foodList .ulitem ul {
+	width: 100%;
+	margin-top: 7%;
+	/*margin-left: 7%;*/
+	height: 50px !important;
+}
+.foodList .fooditem {
+	width: 100%;
+	margin-top: 7%;
+	margin-left: 7%;
+	height: 50px !important;
+}
+.foodList .fooditem li {
+	width: 85px !important;
+	height: 50px;
+	line-height: 50px;
+	cursor: pointer;
+	font-size: 15px;
+	color: #F00;
+	float: left;
+	text-align: center;
+}
+.contentBox {
+	height: 80%;
+}
+.foodList .fooditem li.cur, .foodList #fooditem li:hover {
+	background: url(../img/cp-pro-bk.png) no-repeat bottom !important;
+	background-size: 100% 100%;
+	text-shadow: 0 0 8px #FFFFFF;
+}
+.foodList .foodContent {
+	width: 100%;
+	overflow-y: scroll;
+	z-index: 999;
+	margin-top: 67px;
+	height: 800px;
+	padding: 0 0 5% 0;
+}
+.foodPic {
+	width: 87%;
+	margin-left: 13%;
+	color: #FFFFFF;
+	padding-bottom: 3%;
+	padding-top: 0;
+}
+#mc1 .foodContent:nth-child(6) .foodPic {
+	height: 1400px;
+}
+.foodContent {
+	display: none;
+}
+.curAppear {
+	display: block !important;
+}
+.insideCon {
+	width: 85%;
+	height: 70%;
+	margin: 5% auto;
+}
+.cd-slider li.selected h3, .cd-slider li h3 {
+	font-size: 24px;
+	color: #ff0000;
+	line-height: 32px;
+	text-align: center;
+	width: 280px;
+	margin-top: 20px;
+}
+/*点击内容开始*/
+.pro_text {
+	margin: 22px auto;
+}
+.text_span:not(:nth-child(1)) {
+ margin-top:40px;
+}
+.text_span p {
+	line-height: 22px;
+	font-size: 15px;
+	color: #000;
+}
+.text_span span:nth-child(1) {
+	display: block;
+	width: 20%;
+	border-right: 1px solid #5F5C5C;
+	color: #5F5C5C;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	float: left;
+}
+.text_span span:nth-child(2) {
+	float: right;
+	/*display: block;*/
+	width: 76%;
+}
+/*侧边结束*/

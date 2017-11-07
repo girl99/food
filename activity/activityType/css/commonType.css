@@ -1,0 +1,137 @@
+img {
+	width: 100%;
+	display: block;
+	height: auto;
+}
+.logo {
+	position: absolute!important;
+}
+.search_inp {
+	position: absolute!important;
+}
+.activity {
+	/*height: 315px;*/
+	position: relative;
+	overflow: hidden;
+}
+.activity>img {
+	width: 100%;
+	display: block;
+	height: auto;
+}
+.activity .menu {
+	width: 70%;
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+	z-index: 1200;
+	margin-left: -30%;
+}
+.actContent {
+	background: #f2f2f2;
+	width: 100%;
+	z-index: 9999;
+	overflow: hidden;
+	position: relative;
+	padding: 1.5% 0;
+}
+.bottWrap {
+	background: #f2f2f2;
+	width: 100%;
+	z-index: 9999;
+	overflow: hidden;
+	position: relative;
+}
+.pic {
+	position: relative;
+	width: 100%;
+	background: url("../../img/hui-bg.jpg") no-repeat left center;
+	padding-top: 4%;
+	height: 100%;
+	text-align: center;
+}
+.pic img {
+	display: block;
+	margin: 0 auto;
+	width: 55%;
+	border: 6px solid #FFF;
+	box-shadow: rgba(35,24,21,0.6) 0px 0px 50px;
+}
+.pos {
+	display: block;
+	width: 63%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 19%;
+	margin-left: -0.5%;
+}
+.pos a {
+	display: block;
+	width: 56px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	margin-top: -14px;
+}
+.pos>a:nth-child(1) {
+	left: 0;
+	background: url(../../img/index_bn.png) no-repeat 0px -2px;
+}
+.pos>a:nth-child(1):hover {
+	background: url(../../img/index_bn.png) no-repeat 0px -57px;
+}
+.pos>a:nth-child(2) {
+	right: 0;
+	background: url(../../img/index_bn.png) no-repeat -51px -2px;
+}
+.pos>a:nth-child(2):hover {
+	background: url(../../img/index_bn.png) no-repeat -51px -57px;
+}
+.picDetail {
+	padding: 0 4px 20px 4px;
+	background: url(../../img/act-detail.png) no-repeat;
+	background-size: 100% 100%;
+	margin: -45px auto 0;
+	width: 70%;
+	position: relative;
+	z-index: 5;
+}
+.picDetail p {
+	margin: 15px auto;
+	position: relative;
+	width: 100%;
+	padding-left: 5%;
+	padding-right: 3%;
+	font-size: 16px;
+	color: rgb(191, 191, 191);
+	box-sizing: border-box;
+}
+.red {
+	color: red !important;
+}
+.indent {
+	text-indent: 32px;
+}
+.picDetail p.title {
+	font-size: 30px;
+	font-weight: 600;
+	color: #ffffff;
+	padding-left: 1.1em;
+	box-sizing: border-box;
+	background: url(../../img/act-title.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 50px;
+}
+.title a {
+	display: block;
+	width: 130px;
+	float: right;
+	padding-top: 5px;
+}
+.title a img {
+	width: 85%;
+}
+p i {
+	padding-left: 9.8%;
+}

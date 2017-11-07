@@ -1,0 +1,156 @@
+.logo {
+	position: absolute!important;
+}
+.search_inp {
+	position: absolute!important;
+}
+.contact {
+	position: relative;
+	overflow: hidden;
+}
+.contact>img {
+	width: 100%;
+	display: block;
+	height: auto;
+}
+.contact .menu {
+	width: 70%;
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+	z-index: 1200;
+	margin-left: -30%;
+}
+.contactCon {
+	background: url(../img/blue-bg.jpg);
+	background-size: 100% 100%;
+}
+.contactWrap {
+	width: 100%;
+	background: url(../img/map_bg.png) no-repeat;
+	background-size: 100% 100%;
+	padding-bottom: 3%;
+}
+.cttDetial {
+	width: 70%;
+	overflow: initial;
+	margin: 0 auto;
+}
+.mapCon {
+}
+.mapArea {
+	float: left;
+	width: 40%;
+	padding-bottom: 4%;
+	position: relative;
+}
+.MapName {
+	width: 100%;
+	margin-top: 23%;
+}
+.nameCon {
+	width: 100%;
+	overflow: hidden;
+}
+.nameCon ul {
+	width: 100%;
+}
+.nameCon ul li {
+	width: 100%;
+	text-align: center;
+	color: #ff4900;
+	font-size: 16px;
+	text-shadow: 0 5px 15px #333333;
+	cursor: pointer;
+}
+.nameCon li img {
+	width: 40%;
+	margin: 0 auto;
+}
+.nameCon li:hover img {
+	width: 50%;
+}
+.MapName>a img {
+	width: 100%;
+}
+#prev {
+	width: 14%;
+	display: block;
+	position: absolute;
+	top: 9%;
+	left: 50%;
+	margin-left: -7%;
+	transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+}
+#next {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 14%;
+	left: 50%;
+	margin-left: -7%;
+	transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+}
+.conInfor {
+	margin: 0 auto;
+	width: 80%;
+	left: 50%;
+	height: 30px;
+}
+.con_div {
+	background: url(../img/lianxi-bg.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+	padding: 0 2%;
+}
+.con_div div {
+	display: none;
+}
+.con_div span:nth-child(1), .con_div span:nth-child(3) {
+	width: 50px;
+	font-weight: bold;
+	color: #ff4900;
+	margin-left: 0;
+	margin-right: 10px;
+}
+span:nth-child(2) {
+	width: 55%
+}
+span {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	border-radius: 5px;
+	float: left;
+	font-size: 16px;
+}
+.map {
+	float: left;
+	width: 60%;
+	padding-top: 7%;
+	position: relative;
+}
+.map img {
+	width: 100%;
+}
+.msg {
+	background: url(../img/vf1.png) no-repeat;
+	background-size: 100% 100%;
+	color: #e60012;
+	position: absolute;
+	display: none;
+	padding: 2% 5%;
+}
+.pos {
+	width: 35px;
+	cursor: pointer;
+	position: absolute;
+}
+.map_div1 {
+	display: block;
+}

@@ -1,0 +1,111 @@
+/*Ð¡ÆÁ¿ªÊ¼*/
+@media screen and (max-width: 920px) {
+.small_Menu, .menu em {
+	display: none;
+}
+.menu ul {
+	width: 84%;
+	padding-left: 4%;
+}
+.logo {
+	width: 11%;
+	height: auto;
+	top: 30px;
+	left: 13%;
+}
+.search_inp {
+	/*right:10%;*/
+	top: 30px !important;
+}
+}
+@media screen and (max-width: 775px) {
+.small_Menu {
+	display: none;
+}
+.nav_icon {
+	display: none;
+}
+}
+@media screen and (min-width: 768px) {
+.small_Menu {
+	display: none;
+}
+.nav_icon {
+	display: none;
+}
+}
+@media screen and (max-width: 768px) {
+.menu, .showDown {
+	display: none;
+}
+.nav_icon, .close_icon {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	left: 20px;
+	top: 70%;
+	display: block;
+	z-index: 1000;
+	cursor: pointer;
+}
+.icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	background-color: #FF0000;
+	padding-top: 7px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+}
+.close_icon {
+	opacity: 0;
+	background-color: #FF0000;
+	border-radius: 50px;
+}
+.close_icon img {
+	width: 58%;
+	display: block;
+	margin: 7px auto 0;
+}
+.icon span {
+	display: block;
+	width: 50%;
+	height: 2px;
+	background-color: #FFFFFF;
+	margin: 5px auto 0;
+}
+.small_Menu {
+	display: block;
+}
+.small_Menu ul {
+	display: none;
+	width: 0;
+	left: 0;
+	opacity: 0.7;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	padding: 10px 5px 0;
+	background: red;
+	z-index: 1000;
+}
+.small_Menu ul li {
+	font-size: 100%;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-bottom: 2%;
+	border-bottom: 1px solid #fff;
+}
+.small_Menu ul li:hover {
+	font-weight: bolder;
+	font-size: 16px;
+}
+.small {
+	display: block;
+	overflow: hidden;
+	width: 150px;
+}
+}

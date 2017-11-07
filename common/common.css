@@ -1,0 +1,136 @@
+/*******************************************logo开始*/
+.logo {
+	position: fixed;
+	width: 9%;
+	height: auto;
+	top: 50px;
+	left: 180px;
+	z-index: 100;
+	border-radius: 8px;
+}
+.logo img {
+	width: 100%;
+	border-radius: 8px;
+}
+/******************************************搜索开始*/
+.search_inp {
+	width: 195px;
+	height: 70px;
+	position: fixed;
+	z-index: 999;
+	right: 180px;
+	top: 50px;
+}
+.search_inp .copy {
+	width: 100%;
+	height: 20px;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: right;
+}
+.search_inp .inputbox {
+	width: 100%;
+	float: left;
+	border-radius: 8px;
+	background: pink;
+}
+.inputbox input {
+	padding-left: 5px;
+	outline: none;
+	width: 100%;
+	line-height: 2em;
+	height: 2em;
+	border-radius: 8px;
+	border: 0;
+	background: #FFFFFF url(../img/search.png) no-repeat 171px center;
+	background-size: 8% 53%;
+}
+.search_inp .blog {
+	width: 20%;
+	height: 50px;
+	float: left;
+	margin-left: 108px;
+	margin-top: 6px;
+}
+.search_inp .blog img {
+	width: 32px;
+	display: block;
+	margin: 0 auto;
+}
+.search_inp .weixin {
+	width: 24%;
+	height: 50px;
+	float: right;
+	margin-top: 6px;
+}
+.search_inp .weixin img {
+	width: 32px;
+	display: block;
+	margin: 0 auto;
+}
+/******************************************导航开始*/
+.menu {
+	width: 70%;
+	position: fixed;
+	bottom: 0;
+	left: 44%;
+	z-index: 1200;
+	margin-left: -30%;
+}
+.menu ul {
+	padding-left: 2% !important;
+	width: 100%;
+	height: auto;
+	margin-bottom: 0;
+	background: url(../img/nav-bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.menu a li {
+	width: 10.5%;
+	text-align: center;
+	line-height: 4.5em;
+	height: 3.9em;
+	float: left;
+	color: #ff0000;
+	opacity: 0.5;
+	display: block;
+	font-size: 16px;
+	position: relative;
+	font-weight: 600;
+}
+.menu a .li_bg, .menu a li:hover {
+	opacity: 1 !important;
+	text-shadow: 0 0 10px #FFFFFF;
+	background: url(../img/li-bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.menu a li.active {
+	opacity: 1 !important;
+}
+/*导航结束*/
+/*********************************************************下滑开始*/
+.showDown {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: calc( 95% - 25px);
+	/*top: 94%;
+      margin-top: -25px;*/
+	right: 145px;
+	z-index: 1000;
+	animation: toDown 1s infinite linear;
+}
+@keyframes toDown {
+ 0% {
+ opacity: 0;
+ transform:translateY(-12px)
+}
+ 50% {
+ opacity: 1;
+ transform:translateY(0px)
+}
+ 100% {
+ opacity: 0;
+ transform:translateY(-12px)
+}
+}
